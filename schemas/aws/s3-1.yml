@@ -102,6 +102,8 @@ properties:
     "$ref": "/common-1.json#/definitions/longIdentifier"
   output_format:
     "$ref": "/openshift/terraform-output-format-1.yml"
+  annotations:
+    "$ref": "/common-1.json#/definitions/annotations"
   allow_object_tagging:
     type: boolean
   kms_encryption:
