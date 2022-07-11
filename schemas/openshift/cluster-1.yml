@@ -124,6 +124,8 @@ properties:
         type: string
       private:
         type: boolean
+      ingressPrivate:
+        type: boolean
       storage:
         type: integer
         enum:
