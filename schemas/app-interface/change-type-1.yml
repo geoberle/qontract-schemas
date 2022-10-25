@@ -66,6 +66,14 @@ properties:
                 enum:
                 - added
                 - removed
+              condition:
+                type: array
+                items:
+                  type: string
+                  enum:
+                  - added
+                  - removed
+                  - unchanged
         required:
         - provider
         - jsonPathSelectors
