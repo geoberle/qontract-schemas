@@ -1163,6 +1163,12 @@ confs:
   - { name: accessTokenClientId, type: string, isRequired: true }
   - { name: accessTokenUrl, type: string, isRequired: true }
   - { name: accessTokenClientSecret, type: VaultSecret_v1, isRequired: true }
+  - name: organizations
+    type: OpenShiftClusterManager_v1
+    isList: true
+    synthetic:
+      schema: /openshift/openshift-cluster-manager-1.yml
+      subAttr: environment
 
 - name: AddonUpgradeTest_v1
   fields:
